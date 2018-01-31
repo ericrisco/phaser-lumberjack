@@ -2,16 +2,22 @@
 GamePlayManager = {
 
     init: function(){
-        console.log("init");
+        
     },
     preload: function(){
-        console.log("preload");
+        
+        game.load.image("background", "../assets/images/background.png");
+        game.load.image("man_stand", "assets/images/man_stand.png");
+
     },
     create: function(){
-        console.log("create");
+        
+        game.add.sprite(0, 0, "background");
+        game.add.sprite(50, 50, "man_stand");
+
     },
     update: function(){
-        console.log("update");
+        
     }
 
 }
